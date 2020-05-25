@@ -12,11 +12,15 @@ module.exports = {
     extensions: ["*", ".js", ".jsx"]
   },
   output: {
-    path: __dirname + "/public/",
-    publicPath: "/",
-    filename: "bundle.js"
+    path: __dirname + "/public/assets/",
+    publicPath: "/assets/",
+    filename: "bundle.js",
+    chunkFilename: "[name].js"
   },
   devServer: {
-    contentBase: "./public"
+    contentBase: __dirname + "/public/",
+    inline: true,
+    host: "0.0.0.0",
+    port: 8080
   }
 };
