@@ -1,0 +1,72 @@
+[
+  {
+    "skillName": "HTML5",
+    "skillLevel": 90,
+    "skillIcon": "html5"
+  },
+  {
+    "skillName": "CSS3",
+    "skillLevel": 90,
+    "skillIcon": "css3"
+  },
+  {
+    "skillName": "JAVASCRIPT",
+    "skillLevel": 90,
+    "skillIcon": "javascript"
+  },
+  {
+    "skillName": "REACTJS",
+    "skillLevel": 75,
+    "skillIcon": "react"
+  },
+  {
+    "skillName": "MONGO DB",
+    "skillLevel": 70,
+    "skillIcon": "mongodb"
+  },
+  {
+    "skillName": "NODE JS / EXPRESS JS",
+    "skillLevel": 80,
+    "skillIcon": "nodejs"
+  },
+  {
+    "skillName": "ANDROID APP DEVELOPMENT",
+    "skillLevel": 95,
+    "skillIcon": "android"
+  },
+  {
+    "skillName": "IOS APP DEVELOPMENT",
+    "skillLevel": 95,
+    "skillIcon": "apple"
+  },
+  {
+    "skillName": "CORE JAVA",
+    "skillLevel": 100,
+    "skillIcon": "java"
+  },
+  {
+    "skillName": "SWIFT",
+    "skillLevel": 95,
+    "skillIcon": "swift"
+  },
+  {
+    "skillName": "SPRING BOOT",
+    "skillLevel": 95,
+    "skillIcon": "java"
+  },
+  {
+    "skillName": "ORACLE SQL",
+    "skillLevel": 85,
+    "skillIcon": "database"
+  },
+  {
+    "skillName": "J2EE",
+    "skillLevel": 100,
+    "skillIcon": "java"
+  },
+  {
+    "skillName": "HIBERNATE",
+    "skillLevel": 75,
+    "skillIcon": "java"
+  }
+]

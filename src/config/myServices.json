@@ -1,0 +1,17 @@
+[
+  {
+    "type": "Front End Development",
+    "description": "Develop highly interactive Front end / User Interfaces for your web and mobile applications",
+    "icons": ["html5", "javascript", "react", "css3"]
+  },
+  {
+    "type": "Back End Development",
+    "description": "With my programming knowledge in Java and querying language I develop backend using microservices and SQL",
+    "icons": ["nodejs", "mongodb", "java", "swift"]
+  },
+  {
+    "type": "Mobile Apps Development",
+    "description": "Developing Native Mobile apps for Android / IOS in no time using Java for Android and Swift for IOS",
+    "icons": ["apple", "android"]
+  }
+]
