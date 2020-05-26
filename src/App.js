@@ -6,7 +6,7 @@ import ScrollToTop from "./commons/scrollToTop";
 import RouteComponent from "./commons/routeComponent";
 
 function App() {
-  document.title = "👨‍💻Vibin's Portfolio";
+  document.title = "Vibin's Portfolio";
   return (
     <div>
       <BrowserRouter>
