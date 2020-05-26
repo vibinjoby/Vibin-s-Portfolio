@@ -55,6 +55,7 @@ export default function NavBarComponent() {
     setVisible(false);
   };
   const onClickItem = index => {
+    if (mask) hideDrawer();
     setNavSelected(index);
   };
   return (

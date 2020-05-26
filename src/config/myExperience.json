@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Software Engineer",
+    "period": "JAN 2019 - JUL 2019",
+    "name": "Infosys, India",
+    "description": "Worked on one of the largest telecom provider project of US and worked on webservices both SOAP and REST as well as backend using SQL and the techstack were JAVA SpringBoot microservices",
+    "totalPeriod": "6 months"
+  },
+  {
+    "title": "Software Engineer",
+    "period": "FEB 2017 - DEC 2018",
+    "name": "Verizon Data Services India Pvt Ltd, India",
+    "description": "Working with a reputed Telecom provider of US had immensely helped me understand the Order management and it's workflow from business perspective and the techstack were HTML5, CSS3 and web services including both SOAP and REST",
+    "totalPeriod": "2 years"
+  },
+  {
+    "title": "Associate Software Engineer",
+    "period": "NOV 2014 - JAN 2017",
+    "name": "Hexaware Technologies, India",
+    "description": "Worked on one of the largest US based airline project and the techstack were mainly GWT (Google web tool kit) for front end and training new joinees",
+    "totalPeriod": "2 years"
+  }
+]

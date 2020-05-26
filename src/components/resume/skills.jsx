@@ -2,8 +2,8 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import { Box, LinearProgress } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import Utils from "../commons/utils";
-import mySkills from "../config/mySkills.json";
+import Utils from "../../commons/utils";
+import mySkills from "../../config/mySkills.json";
 
 const useStyles = makeStyles(theme => ({
   skillLevel: {

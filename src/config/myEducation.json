@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Post Graduate Certificate",
+    "period": "AUG 2019 - MAY 2021",
+    "name": "Lambton College, Toronto, Canada",
+    "description": "Majored in Mobile application design and development including both Android / IOS and Web application including both Front end and Back end development",
+    "totalPeriod": "2 years"
+  },
+  {
+    "title": "Bachelor of Engineering",
+    "period": "AUG 2010 - APR 2014",
+    "name": "Prathyusha institute of Technology and management, India",
+    "description": "Majored in Electronics and communication",
+    "totalPeriod": "4 years"
+  },
+  {
+    "title": "High School",
+    "period": "APR 2009 - APR 2010",
+    "name": "Velammal Matriculation Higher Secondary School, India",
+    "description": "Computer Science",
+    "totalPeriod": "1 year"
+  }
+]

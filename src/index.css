@@ -19,6 +19,7 @@ code {
   width: 100%;
   background: #000000;
   margin-top: -48px;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -33,16 +34,4 @@ code {
   animation-name: wave;
   display: inline-block;
   transform-origin: 70% 70%;
-}
-
-.ant-carousel .slick-slide {
-  text-align: center;
-  height: 160px;
-  line-height: 160px;
-  background: #364d79;
-  overflow: hidden;
-}
-
-.ant-carousel .slick-slide h3 {
-  color: #fff;
 }

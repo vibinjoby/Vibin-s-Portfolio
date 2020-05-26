@@ -5,7 +5,7 @@ import { Box, makeStyles } from "@material-ui/core";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import "../index.css";
+import "../../index.css";
 
 const useStyles = makeStyles(theme => ({
   rootHome: {

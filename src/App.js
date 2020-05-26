@@ -1,12 +1,9 @@
 import React from "react";
 import "./index.css";
-import NavBarComponent from "./components/navBarComponent";
-import Home from "./components/home";
-import About from "./components/about";
-import Resume from "./components/resume";
-import Portfolios from "./components/portfolios";
-import Contact from "./components/contact";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import NavBarComponent from "./commons/navBarComponent";
+import { BrowserRouter } from "react-router-dom";
+import ScrollToTop from "./commons/scrollToTop";
+import RouteComponent from "./commons/routeComponent";
 
 function App() {
   document.title = "👨‍💻Vibin's Portfolio";
@@ -14,14 +11,8 @@ function App() {
     <div>
       <BrowserRouter>
         <NavBarComponent />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/home" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/resume" component={Resume} />
-          <Route path="/portfolios" component={Portfolios} />
-          <Route path="/contact" component={Contact} />
-        </Switch>
+        <ScrollToTop />
+        <RouteComponent />
       </BrowserRouter>
     </div>
   );

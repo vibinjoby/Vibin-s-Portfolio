@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Card, CardContent, Box, LinearProgress } from "@material-ui/core";
 import { Typography } from "antd";
-import Utils from "../commons/utils";
+import Utils from "./utils";
 
 const useStyles = makeStyles(theme => ({
   root: {

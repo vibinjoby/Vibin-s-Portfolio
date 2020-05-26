@@ -1,5 +1,5 @@
 import React from "react";
-import HeadingComponent from "./headingComponent";
+import HeadingComponent from "../../commons/headingComponent";
 
 export default function Contact() {
   return (

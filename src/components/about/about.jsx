@@ -1,18 +1,18 @@
 import React from "react";
-import HeadingComponent from "./headingComponent";
-import aboutMe from "../static/images/about_me.jpg";
+import HeadingComponent from "../../commons/headingComponent";
+import aboutMe from "../../static/images/about_me.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import { Typography } from "antd";
 import { Box } from "@material-ui/core";
 import MyBio from "./myBio";
 import Button from "@material-ui/core/Button";
-import ServiceCard from "./serviceCard";
-import myServices from "../config/myServices.json";
-import myBioData from "../config/myBioData.json";
+import ServiceCard from "../../commons/serviceCard";
+import myServices from "../../config/myServices.json";
+import myBioData from "../../config/myBioData.json";
 import { Carousel } from "antd";
-import recommendations_1 from "../static/images/recommendations_1.png";
-import recommendations_2 from "../static/images/recommendations_2.png";
+import recommendations_1 from "../../static/images/recommendations_1.png";
+import recommendations_2 from "../../static/images/recommendations_2.png";
 
 const useStyles = makeStyles(theme => ({
   header: {
