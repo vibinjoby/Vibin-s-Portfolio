@@ -1,20 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
-import NavBarComponent from "./commons/navBarComponent";
+import NavBarComponent from "./components/commons/navBarComponent";
 import { BrowserRouter } from "react-router-dom";
 import ScrollToTop from "./commons/scrollToTop";
-import RouteComponent from "./commons/routeComponent";
+import RouteComponent from "./components/commons/routeComponent";
+import RouteContext from "./context/routeContext";
 
 function App() {
-  document.title = "Vibin's Portfolio";
+  const [currentPage, setCurrentPage] = useState(0);
+
+  const onPageChange = selectedPage => {
+    setCurrentPage(selectedPage);
+  };
   return (
-    <div>
-      <BrowserRouter>
-        <NavBarComponent />
-        <ScrollToTop />
-        <RouteComponent />
-      </BrowserRouter>
-    </div>
+    <RouteContext.Provider
+      value={{ currentPage: currentPage, onChange: onPageChange }}
+    >
+      <div>
+        <BrowserRouter>
+          <NavBarComponent currentPage={currentPage} />
+          <ScrollToTop />
+          <RouteComponent />
+        </BrowserRouter>
+      </div>
+    </RouteContext.Provider>
   );
 }
 

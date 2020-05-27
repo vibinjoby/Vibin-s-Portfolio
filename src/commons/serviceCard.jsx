@@ -45,10 +45,15 @@ export default function ServiceCard(props) {
   const { details } = props;
   let icons = [];
   for (const [, value] of Object.entries(Utils())) {
-    details.icons.map(icon => {
+    details.icons.map((icon, index) => {
       if (value.name === icon) {
         icons.push(
-          <img alt={value.name} src={value.icon} style={{ marginRight: 20 }} />
+          <img
+            key={index}
+            alt={value.name}
+            src={value.icon}
+            style={{ marginRight: 20 }}
+          />
         );
       }
     });

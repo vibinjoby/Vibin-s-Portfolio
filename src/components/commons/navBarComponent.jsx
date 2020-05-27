@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-import myPhoto from "../static/images/profile.jpg";
+import myPhoto from "../../static/images/profile.jpg";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({
@@ -23,6 +23,21 @@ const useStyles = makeStyles(theme => ({
     display: "block"
   },
   menuIc: {
+    [theme.breakpoints.down("sm")]: {
+      display: "block"
+    }
+  },
+  menu: {
+    color: "#fff",
+    position: "fixed",
+    left: "2px",
+    top: "20px",
+    padding: 10,
+    height: "50px",
+    width: "50px",
+    textAlign: "center",
+    fontSize: "1.6rem",
+    background: "#191d2b",
     [theme.breakpoints.down("sm")]: {
       display: "block"
     }
@@ -41,10 +56,10 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function NavBarComponent() {
+export default function NavBarComponent(props) {
+  const { currentPage } = props;
   const [mask, setMask] = useState(false);
   const [visible, setVisible] = useState(true);
-  const [navSelected, setNavSelected] = useState(0);
   const classes = useStyles();
 
   const showDrawer = () => {
@@ -56,7 +71,6 @@ export default function NavBarComponent() {
   };
   const onClickItem = index => {
     if (mask) hideDrawer();
-    setNavSelected(index);
   };
   return (
     <>
@@ -66,7 +80,7 @@ export default function NavBarComponent() {
         className={classes.menuIc}
         onClick={showDrawer}
       >
-        <MenuIcon style={{ color: "#FFFFFF" }} />
+        <MenuIcon className={classes.menu} />
       </IconButton>
       <Drawer
         mask={mask}
@@ -95,7 +109,7 @@ export default function NavBarComponent() {
                 <MenuItem
                   onClick={() => onClickItem(index)}
                   className={
-                    navSelected === index ? classes.active : "listItem"
+                    currentPage === index ? classes.active : "listItem"
                   }
                   style={{ textAlign: "center" }}
                 >
@@ -103,7 +117,7 @@ export default function NavBarComponent() {
                     <Box
                       fontFamily="sans-serif"
                       style={
-                        navSelected === index
+                        currentPage === index
                           ? {
                               color: "#FFFFFF"
                             }

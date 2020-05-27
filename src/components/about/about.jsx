@@ -1,5 +1,5 @@
-import React from "react";
-import HeadingComponent from "../../commons/headingComponent";
+import React, { useContext } from "react";
+import HeadingComponent from "../commons/headingComponent";
 import aboutMe from "../../static/images/about_me.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
@@ -13,6 +13,8 @@ import myBioData from "../../config/myBioData.json";
 import { Carousel } from "antd";
 import recommendations_1 from "../../static/images/recommendations_1.png";
 import recommendations_2 from "../../static/images/recommendations_2.png";
+import RouteContext from "../../context/routeContext";
+import SignComp from "../commons/signComp";
 
 const useStyles = makeStyles(theme => ({
   header: {
@@ -69,12 +71,14 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function About() {
+export default function About(props) {
   const classes = useStyles();
+  const routeContext = useContext(RouteContext);
+  routeContext.onChange(1);
   return (
     <div className={`root-background`}>
+      <SignComp />
       <HeadingComponent header="ABOUT ME" />
-
       <div className={classes.header}>
         <Grid container spacing={3} style={{ width: "100%" }}>
           <Grid item md>
@@ -101,31 +105,30 @@ export default function About() {
           </Grid>
         </Grid>
       </div>
-
       <HeadingComponent header="WHAT DO I OFFER?" />
-
       <div className={classes.services}>
         <Grid container spacing={3}>
-          {myServices.map(serviceDetails => (
-            <Grid item>
+          {myServices.map((serviceDetails, index) => (
+            <Grid item key={index}>
               <ServiceCard details={serviceDetails} />
             </Grid>
           ))}
         </Grid>
       </div>
-
       <HeadingComponent header="WHAT DO PEOPLE HAVE TO SAY?" />
       <div className={classes.recommendations}>
-        <Carousel autoplay={true}>
-          {[recommendations_1, recommendations_2].map(recommendations => (
-            <div>
-              <img
-                alt="Recommendations"
-                src={recommendations}
-                style={{ width: "100%" }}
-              ></img>
-            </div>
-          ))}
+        <Carousel autoplay>
+          {[recommendations_1, recommendations_2].map(
+            (recommendations, index) => (
+              <div key={index}>
+                <img
+                  alt="Recommendations"
+                  src={recommendations}
+                  style={{ width: "100%" }}
+                ></img>
+              </div>
+            )
+          )}
         </Carousel>
       </div>
     </div>

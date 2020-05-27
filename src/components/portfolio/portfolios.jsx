@@ -1,5 +1,5 @@
-import React from "react";
-import HeadingComponent from "../../commons/headingComponent";
+import React, { useContext } from "react";
+import HeadingComponent from "../commons/headingComponent";
 import {
   Grid,
   Card,
@@ -10,6 +10,8 @@ import {
 } from "@material-ui/core";
 import myProfile from "../../static/images/profile.jpg";
 import Typography from "@material-ui/core/Typography";
+import RouteContext from "../../context/routeContext";
+import SignComp from "../commons/signComp";
 
 const useStyles = makeStyles(theme => ({
   gridContainer: {
@@ -29,9 +31,12 @@ const useStyles = makeStyles(theme => ({
 
 export default function Portfolios() {
   const classes = useStyles();
-  const items = [1, 2, 3, 4, 5, 6, 7];
+  const routeContext = useContext(RouteContext);
+  routeContext.onChange(3);
+  const items = [, 2, 3, 4, 5, 6, 7];
   return (
     <div className={`root-background`}>
+      <SignComp />
       <HeadingComponent header="PORTFOLIOS" />
       <Grid container spacing={1} className={classes.gridContainer}>
         {items.map(i => (

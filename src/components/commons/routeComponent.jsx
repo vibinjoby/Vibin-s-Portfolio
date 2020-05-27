@@ -1,10 +1,10 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Home from "../components/home/home";
-import About from "../components/about/about";
-import Resume from "../components/resume/resume";
-import Portfolios from "../components/portfolio/portfolios";
-import Contact from "../components/contact/contact";
+import Home from "../home/home";
+import About from "../about/about";
+import Resume from "../resume/resume";
+import Portfolios from "../portfolio/portfolios";
+import Contact from "../contact/contact";
 
 export default function RouteComponent() {
   return (

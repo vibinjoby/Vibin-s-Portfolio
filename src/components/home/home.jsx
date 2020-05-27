@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import SnowStorm from "react-snowstorm";
 import { Typography } from "antd";
 import { Box, makeStyles } from "@material-ui/core";
@@ -6,10 +6,12 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import "../../index.css";
+import RouteContext from "../../context/routeContext";
+import SignComp from "../commons/signComp";
 
 const useStyles = makeStyles(theme => ({
   rootHome: {
-    height: "100vh",
+    height: "105vh",
     width: "100%",
     background: "#000000",
     marginTop: "-48px"
@@ -67,13 +69,11 @@ const useStyles = makeStyles(theme => ({
 
 export default function Home() {
   const classes = useStyles();
+  const routeContext = useContext(RouteContext);
+  routeContext.onChange(0);
   return (
     <div className={classes.rootHome}>
-      <div className={classes.sign}>
-        <span className={classes.greyColor}> &lt;&nbsp;</span>
-        <span className={classes.signature}>Vibin E Joby</span>
-        <span className={classes.greyColor}>/&gt;</span>
-      </div>
+      <SignComp />
       <div className={classes.heading}>
         <Typography align="center">
           <Box
