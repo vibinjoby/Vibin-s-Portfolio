@@ -8,6 +8,15 @@ import {
 } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
+  cardContainer: {
+    backgroundColor: "#191d2b",
+    width: "80%",
+    paddingLeft: 20,
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      paddingLeft: 0
+    }
+  },
   icon: {
     display: "inline-block",
     color: "#a4acc4",
@@ -32,13 +41,7 @@ export default function CustomContactComp(props) {
   const classes = useStyles();
   const { label, data, icon } = props;
   return (
-    <Card
-      style={{
-        backgroundColor: "#191d2b",
-        width: "80%",
-        paddingLeft: 20
-      }}
-    >
+    <Card className={classes.cardContainer}>
       <CardContent>
         <Grid container spacing={3}>
           <Grid item xs={3}>
