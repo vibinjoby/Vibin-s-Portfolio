@@ -18,7 +18,10 @@ const TableCell = withStyles({
 const useStyles = makeStyles(theme => ({
   table: {
     color: "#FFFFFFF",
-    maxWidth: 500
+    maxWidth: 500,
+    [theme.breakpoints.down("sm")]: {
+      width: "98vw"
+    }
   },
   tableCellKey: {
     fontFamily: "Nunito,sans-serif",

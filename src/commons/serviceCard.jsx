@@ -11,7 +11,10 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: "#181d2b",
     borderWidth: 5,
     borderRadius: 1,
-    borderColor: "#A4ACC4"
+    borderColor: "#A4ACC4",
+    [theme.breakpoints.down("sm")]: {
+      width: "90vw"
+    }
   },
   bullet: {
     display: "inline-block",
