@@ -33,7 +33,7 @@ export default function Skills() {
   const classes = useStyles();
   return (
     <div>
-      <Grid container spacing={5}>
+      <Grid container spacing={5} style={{ margin: 0, width: "100%" }}>
         {mySkills.map(skill => (
           <Grid item key={skill.skillName}>
             <Box className={classes.skillType}>{skill.skillName}</Box>

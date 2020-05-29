@@ -35,3 +35,82 @@ code {
   display: inline-block;
   transform-origin: 70% 70%;
 }
+.mi-portfolio.mi-portfolio-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.mi-portfolio {
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.mi-portfolio-image {
+  display: block;
+  position: relative;
+}
+
+.mi-portfolio-image:before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  height: calc(100% - 30px);
+  width: calc(100% - 30px);
+  background: hsla(0, 0%, 100%, 0.9);
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0;
+  transform-origin: 0;
+}
+
+.mi-portfolio-image ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 30px;
+  -webkit-transition: all 0.4s ease-in-out 0.2s;
+  transition: all 0.4s ease-in-out 0.2s;
+}
+
+.mi-portfolio-image ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 7px;
+}
+
+.mi-portfolio-image ul li a,
+.mi-portfolio-image ul li button {
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  padding: 5px 0;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 1;
+  background: #a4acc4;
+  color: #fff;
+  border: 1px solid #a4acc4;
+  border-radius: 100px;
+  outline: none;
+  font-size: 1.25rem;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.mi-portfolio-image ul li a svg,
+.mi-portfolio-image ul li button svg {
+  height: 100%;
+}
