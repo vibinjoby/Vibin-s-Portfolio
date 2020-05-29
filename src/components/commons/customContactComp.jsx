@@ -20,8 +20,8 @@ const useStyles = makeStyles(theme => ({
   icon: {
     display: "inline-block",
     color: "#a4acc4",
-    height: 70,
-    width: 70,
+    height: 59,
+    width: 64,
     flex: "0 0 70px",
     maxWidth: 70,
     border: "1px solid #2e344e",

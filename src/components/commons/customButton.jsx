@@ -4,8 +4,8 @@ import { Button } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
   button: {
-    marginLeft: theme.spacing.unit,
-    marginRight: theme.spacing.unit,
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
     background: "#037fff",
     color: "#fff"
   }
@@ -16,8 +16,8 @@ export default function CustomButton(props) {
   return (
     <Button
       variant="contained"
-      href="#contained-buttons"
       className={classes.button}
+      onClick={() => props.onSubmit()}
     >
       {props.message}
     </Button>

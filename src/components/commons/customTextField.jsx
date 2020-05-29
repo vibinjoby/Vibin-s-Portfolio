@@ -7,8 +7,9 @@ const useStyles = makeStyles(theme => ({
     flexWrap: "wrap"
   },
   textField: {
-    marginLeft: theme.spacing.unit,
-    marginRight: theme.spacing.unit,
+    color: "#ffffff",
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
     width: "200%",
     [theme.breakpoints.down("sm")]: {
       width: "180%"
@@ -22,11 +23,12 @@ const useStyles = makeStyles(theme => ({
   cssOutlinedInput: {
     "&$cssFocused $notchedOutline": {
       borderColor: `${theme.palette.primary.main} !important`
-    }
+    },
+    color: "#fff"
   },
 
   cssFocused: {
-    color: "#a4acc4"
+    color: "#fff"
   },
 
   notchedOutline: {
@@ -37,6 +39,11 @@ const useStyles = makeStyles(theme => ({
 
 export default function CustomTextField(props) {
   const classes = useStyles();
+
+  const handleChange = e => {
+    props.setvalue(e.currentTarget.value);
+    props.errorVal(null);
+  };
   return (
     <div>
       <TextField
@@ -45,6 +52,7 @@ export default function CustomTextField(props) {
         className={classes.textField}
         margin="normal"
         variant="outlined"
+        onChange={handleChange}
         {...props}
         rows={7}
         InputLabelProps={{

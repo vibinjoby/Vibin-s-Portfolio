@@ -25,7 +25,7 @@
   },
   {
     "title": "Endows Banking Android",
-    "link": "",
+    "link": "#",
     "description": "This is a banking android app which runs on Firebase",
     "sourceCode": "https://github.com/vibinjoby/EndowsBankingApp",
     "techStack": "Android, Firebase",

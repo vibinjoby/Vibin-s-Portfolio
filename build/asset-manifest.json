@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.161bca2a.chunk.css",
-    "main.js": "/static/js/main.ed75eb2c.chunk.js",
-    "main.js.map": "/static/js/main.ed75eb2c.chunk.js.map",
+    "main.css": "/static/css/main.30bc1415.chunk.css",
+    "main.js": "/static/js/main.17468eb0.chunk.js",
+    "main.js.map": "/static/js/main.17468eb0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a106779c.js",
     "runtime-main.js.map": "/static/js/runtime-main.a106779c.js.map",
     "static/css/2.4c6ee7a4.chunk.css": "/static/css/2.4c6ee7a4.chunk.css",
-    "static/js/2.5c78fcdf.chunk.js": "/static/js/2.5c78fcdf.chunk.js",
-    "static/js/2.5c78fcdf.chunk.js.map": "/static/js/2.5c78fcdf.chunk.js.map",
+    "static/js/2.5b5bb64f.chunk.js": "/static/js/2.5b5bb64f.chunk.js",
+    "static/js/2.5b5bb64f.chunk.js.map": "/static/js/2.5b5bb64f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.aa01fe7dae92a60124f753e8040c704b.js": "/precache-manifest.aa01fe7dae92a60124f753e8040c704b.js",
+    "precache-manifest.668086b93e7eeda6da835ad29e498016.js": "/precache-manifest.668086b93e7eeda6da835ad29e498016.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.4c6ee7a4.chunk.css.map": "/static/css/2.4c6ee7a4.chunk.css.map",
-    "static/css/main.161bca2a.chunk.css.map": "/static/css/main.161bca2a.chunk.css.map",
-    "static/js/2.5c78fcdf.chunk.js.LICENSE.txt": "/static/js/2.5c78fcdf.chunk.js.LICENSE.txt",
+    "static/css/main.30bc1415.chunk.css.map": "/static/css/main.30bc1415.chunk.css.map",
+    "static/js/2.5b5bb64f.chunk.js.LICENSE.txt": "/static/js/2.5b5bb64f.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/Agustina-Signature.03cfd7bc.otf",
     "static/media/aboutMe.jpg": "/static/media/aboutMe.b85b9415.jpg",
     "static/media/about_me.jpg": "/static/media/about_me.b85b9415.jpg",
-    "static/media/camplus_ios.jpg": "/static/media/camplus_ios.79c6fa2f.jpg",
-    "static/media/lump_android.png": "/static/media/lump_android.0c1ff469.png",
+    "static/media/camplus_ios.png": "/static/media/camplus_ios.ca8f0fe6.png",
+    "static/media/endows_android.png": "/static/media/endows_android.bc8857af.png",
+    "static/media/lumpnotes_android.png": "/static/media/lumpnotes_android.0c1ff469.png",
+    "static/media/lumpnotes_ios.png": "/static/media/lumpnotes_ios.3bf326b7.png",
     "static/media/moviezhub_react.png": "/static/media/moviezhub_react.7cb94a03.png",
     "static/media/profile.jpg": "/static/media/profile.abfd94f0.jpg",
     "static/media/recommendations_1.png": "/static/media/recommendations_1.d3173c82.png",
@@ -28,8 +30,8 @@
   "entrypoints": [
     "static/js/runtime-main.a106779c.js",
     "static/css/2.4c6ee7a4.chunk.css",
-    "static/js/2.5c78fcdf.chunk.js",
-    "static/css/main.161bca2a.chunk.css",
-    "static/js/main.ed75eb2c.chunk.js"
+    "static/js/2.5b5bb64f.chunk.js",
+    "static/css/main.30bc1415.chunk.css",
+    "static/js/main.17468eb0.chunk.js"
   ]
 }
