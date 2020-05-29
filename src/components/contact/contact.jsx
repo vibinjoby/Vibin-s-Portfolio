@@ -14,8 +14,8 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     flexWrap: "wrap",
     paddingLeft: 300,
+    paddingRight: 20,
     paddingTop: 20,
-    width: "100%",
     [theme.breakpoints.down("sm")]: {
       paddingLeft: 20
     }
@@ -35,8 +35,10 @@ const useStyles = makeStyles(theme => ({
   },
   customContactComp: {
     color: "#fff",
+    marginLeft: theme.spacing(0),
+    marginRight: theme.spacing(1),
     [theme.breakpoints.down("sm")]: {
-      marginLeft: 30
+      marginLeft: 20
     }
   },
   errorAlert: {

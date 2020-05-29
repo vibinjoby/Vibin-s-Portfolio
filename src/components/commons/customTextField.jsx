@@ -8,11 +8,11 @@ const useStyles = makeStyles(theme => ({
   },
   textField: {
     color: "#ffffff",
-    marginLeft: theme.spacing(1),
+    marginLeft: theme.spacing(0),
     marginRight: theme.spacing(1),
     width: "200%",
     [theme.breakpoints.down("sm")]: {
-      width: "180%"
+      width: "90vw"
     }
   },
 

@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
     width: "80%",
     paddingLeft: 20,
     [theme.breakpoints.down("sm")]: {
-      width: "100%",
+      width: "90vw",
       paddingLeft: 0
     }
   },

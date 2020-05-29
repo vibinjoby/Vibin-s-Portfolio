@@ -4,7 +4,7 @@ import { Button } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
   button: {
-    marginLeft: theme.spacing(1),
+    marginLeft: theme.spacing(0),
     marginRight: theme.spacing(1),
     background: "#037fff",
     color: "#fff"
