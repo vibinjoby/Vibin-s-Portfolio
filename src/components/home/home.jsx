@@ -99,9 +99,9 @@ export default function Home() {
             fontWeight="fontWeightBold"
             color="#A4ACC4"
           >
-            Welcome to my Profile. I am a Fullstack developer. I develop
-            softwares for both mobile and web with ease. Check out my portfolio
-            to know more.
+            Focus and passion driven Full stack developer with a keen interest
+            for mobile apps and games. Check my works to see what I am capable
+            of.
           </Box>
         </Typography>
         <LinkedInIcon
