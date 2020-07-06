@@ -46,5 +46,13 @@
     "sourceCode": "https://github.com/vibinjoby/Vibin-s-Portfolio",
     "techStack": "ReactJS, Material UI, AntD",
     "image": "vibin_portfolio.png"
+  },
+  {
+    "title": "Quick Poll",
+    "link": "https://quick-poll.netlify.app/",
+    "description": "An online polling site to suit user's needs for customization.",
+    "sourceCode": "https://github.com/vibinjoby/Quick-Poll",
+    "techStack": "HTML,JS, CSS, NodeJS,ExpressJS, MongoDB",
+    "image": "Quick_poll.png"
   }
 ]
