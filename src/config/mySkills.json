@@ -16,7 +16,12 @@
   },
   {
     "skillName": "REACTJS",
-    "skillLevel": 75,
+    "skillLevel": 100,
+    "skillIcon": "react"
+  },
+  {
+    "skillName": "REACTNATIVE",
+    "skillLevel": 100,
     "skillIcon": "react"
   },
   {
