@@ -1,5 +1,19 @@
 [
   {
+    "title": "Tazwiz",
+    "link": "https://apps.apple.com/ca/app/tazwiz/id1540654953",
+    "description": "An online marketplace for freelancers",
+    "techStack": "React Native",
+    "image": "tazwiz.png"
+  },
+  {
+    "title": "TiffinFinds",
+    "link": "https://apps.apple.com/ca/app/tazwiz/id1546136141",
+    "description": "An online food delivery app",
+    "techStack": "React Native",
+    "image": "tiffinfinds.png"
+  },
+  {
     "title": "Camplus-IOS",
     "link": "https://www.youtube.com/playlist?list=PL_812iWB_7koNA2idbDDZ90m37GBBRN0o",
     "description": "An enterprise IOS LMS app",
