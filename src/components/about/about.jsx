@@ -15,7 +15,7 @@ import recommendations_1 from "../../static/images/recommendations_1.png";
 import recommendations_2 from "../../static/images/recommendations_2.png";
 import RouteContext from "../../context/routeContext";
 import SignComp from "../commons/signComp";
-import resume from "../../static/files/Vibin_Resume.pdf";
+import resume from "../../static/Vibin_Resume.pdf";
 
 const useStyles = makeStyles(theme => ({
   header: {
