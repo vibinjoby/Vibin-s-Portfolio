@@ -14,6 +14,13 @@
     "image": "tiffinfinds.png"
   },
   {
+    "title": "Tiffin Vendors",
+    "link": "https://apps.apple.com/ca/app/tiffin-vendors/id1563821378",
+    "description": "Vendor app for Tiffin Finds",
+    "techStack": "React Native",
+    "image": "tiffinfinds-vendor.png"
+  },
+  {
     "title": "Camplus-IOS",
     "link": "https://www.youtube.com/playlist?list=PL_812iWB_7koNA2idbDDZ90m37GBBRN0o",
     "description": "An enterprise IOS LMS app",
